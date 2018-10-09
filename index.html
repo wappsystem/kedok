@@ -24,6 +24,7 @@
                 <div menu id="vm-menu">
                     <a href="?/home"><i class="fa fa-home"></i> Hem</a>
                     <a href="?/document-data"><i class="fa fa-th"></i> Mina dokument</a>
+                    <a href="?/permissions"><i class="fa fa-th"></i> Permissions</a>
                     <a id=vm_signin onclick="$vm.nav_wappsystem_signin();"><i class="fa fa-user"></i> Sign In</a>
                     <a id=vm_signout class=vm-hide onclick=$vm.nav_signout()><i class="fa fa-user"></i> Sign Out</a>
                 </div>
@@ -52,6 +53,14 @@
             "home": {"url":"https://modules.wappsystem.com.au/home/home.html"},
             "document-data":             {"table_id":"20011617","url":"https://modules.wappsystem.com.au/document-handling/document-data.html","form_module":"document-form"},
             "document-form":             {"table_id":"20011617","url":"https://modules.wappsystem.com.au/document-handling/document-form.html"},
+            "permissions":                          {                      "url":"https://modules.wappsystem.com.au/permissions/panel.html"},
+            "permission-check":                     {"table_id":"20011620","url":"https://modules.wappsystem.com.au/permissions/check.html"},
+            "permission-role-login-data":           {"table_id":"20011620","url":"https://modules.wappsystem.com.au/permissions/role-login-data.html","form_module":"permission-role-login-form"},
+            "permission-role-login-form":           {"table_id":"20011620","url":"https://modules.wappsystem.com.au/permissions/role-login-form.html"},
+            "permission-role-table-group-data":     {"table_id":"20011619","url":"https://modules.wappsystem.com.au/permissions/role-table-group-data.html","form_module":"permission-role-table-group-form"},
+            "permission-role-table-group-form":     {"table_id":"20011619","url":"https://modules.wappsystem.com.au/permissions/role-table-group-form.html"},
+        	"permission-query-data":                {"table_id":"20011618","url":"https://modules.wappsystem.com.au/permissions/query-data.html","form_module":"permission-query-form"},
+            "permission-query-form":                {"table_id":"20011618","url":"https://modules.wappsystem.com.au/permissions/query-form.html"},
         }
         //------------------------------------
         $vm.local_url=function(url){
